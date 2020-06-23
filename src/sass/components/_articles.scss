@@ -1,0 +1,30 @@
+.articles {
+  background-color: $very-light-gray;
+  padding: 2rem 0 4rem;
+  text-align: center;
+}
+
+.article {
+  background-color: $white;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  &__image {
+    margin: 0;
+    img {
+      max-width: 100%;
+    }
+  }
+  &__information {
+    padding: 1rem;
+    text-align: left;
+  }
+  &__title {
+    margin: 1rem 0;
+    font-size: 18px;
+  }
+  &__description {
+    margin: 0;
+    font-size: 14px;
+  }
+}

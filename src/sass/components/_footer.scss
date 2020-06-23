@@ -1,0 +1,42 @@
+.footer {
+  padding: 2rem 0 4rem;
+  background-color: $dark-blue;
+  text-align: center;
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  &__socialNetwork {
+    margin-bottom: 1.5rem;
+    &--logo {
+      margin: 0;
+      margin-bottom: 1rem;
+    }
+    &--share {
+      display: flex;
+      justify-content: center;
+    }
+    &--icon {
+      margin-right: 1rem;
+    }
+  }
+  &__item {
+    line-height: 2.5;
+    a {
+      color: $light-grayish-blue;
+      text-decoration: none;
+    }
+  }
+  &__support {
+    margin-bottom: 1.5rem;
+  }
+  &__copyright {
+    p {
+      font-size: 80%;
+      a {
+        color: $grayish-blue;
+      }
+    }
+  }
+}

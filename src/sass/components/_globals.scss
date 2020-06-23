@@ -1,0 +1,58 @@
+$dark-blue: hsl(233, 26%, 24%);
+$lime-green: hsl(136, 65%, 51%);
+$bright-cyan: hsl(192, 70%, 51%);
+$grayish-blue: hsl(233, 8%, 62%);
+$light-grayish-blue: hsl(220, 16%, 96%);
+$very-light-gray: hsl(0, 0%, 98%);
+$white: hsl(0, 0%, 100%);
+$shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.2);
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Public Sans', sans-serif;
+  font-size: 16px;
+}
+
+.wrapper {
+  padding: 0 1rem;
+  margin: 0 auto;
+  max-width: 1140px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $dark-blue;
+  font-weight: 400;
+}
+
+p {
+  color: $grayish-blue;
+  font-weight: 400;
+}
+
+small {
+  color: $grayish-blue;
+  font-size: 75%;
+}
+
+.button {
+  padding: .8rem;
+  min-width: 180px;
+  border: 0;
+  border-radius: 25px;
+  background-image: linear-gradient(to right, $lime-green, $bright-cyan);
+  color: $white;
+  font-weight: bold;
+}
+
+@keyframes fadeUp {
+  0% {
+    transform: translateY(-1000px);
+  }
+  50% {
+    transform: translateY(-500px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,245 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Public Sans", sans-serif;
+  font-size: 16px;
+}
+
+.wrapper {
+  padding: 0 1rem;
+  margin: 0 auto;
+  max-width: 1140px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #2d314d;
+  font-weight: 400;
+}
+
+p {
+  color: #9698a6;
+  font-weight: 400;
+}
+
+small {
+  color: #9698a6;
+  font-size: 75%;
+}
+
+.button {
+  padding: 0.8rem;
+  min-width: 180px;
+  border: 0;
+  border-radius: 25px;
+  background-image: linear-gradient(to right, #31d35c, #2bb7da);
+  color: white;
+  font-weight: bold;
+}
+
+@keyframes fadeUp {
+  0% {
+    transform: translateY(-1000px);
+  }
+  50% {
+    transform: translateY(-500px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.header {
+  height: 60px;
+  background-color: white;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+}
+.header__container {
+  display: flex;
+  justify-content: space-between;
+}
+.header__figure {
+  margin: 1rem 0;
+}
+.header__hamburguer {
+  width: 3rem;
+  height: 3rem;
+  position: relative;
+  cursor: pointer;
+  transition: 0.3s;
+  z-index: 2;
+}
+.header__hamburguer span, .header__hamburguer span::before, .header__hamburguer span::after {
+  background: #2d314d;
+  content: "";
+  display: block;
+  height: 2px;
+  position: absolute;
+  transform: rotate(0);
+  transition: transform 0.1s ease-in, top 0.1s ease-in 150ms, bottom 0.1s ease-in 150ms;
+  width: 1.5rem;
+}
+.header__hamburguer span {
+  top: 1.5rem;
+  left: 0.5rem;
+}
+.header__hamburguer span::before {
+  top: -0.5rem;
+}
+.header__hamburguer span::after {
+  top: 0.5rem;
+}
+.header__list {
+  background: white;
+  max-width: 80%;
+  margin: 0 auto;
+  margin-top: 2rem;
+  padding: 1.5rem 0;
+  list-style: none;
+  border-radius: 3px;
+  text-align: center;
+  box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.2);
+}
+.header__nav {
+  display: none;
+}
+.header__nav.is-active {
+  display: block;
+  position: fixed;
+  top: 60px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(45, 49, 77, 0.5);
+}
+.header__nav.is-active .header__list {
+  animation: fadeUp 0.3s ease-out forwards;
+}
+.header__nav.is-active + .header__hamburguer span {
+  left: 0.75rem;
+  background-color: white;
+}
+.header__nav.is-active + .header__hamburguer span::before {
+  transform: rotate(45deg);
+  top: 0;
+}
+.header__nav.is-active + .header__hamburguer span::after {
+  top: 0;
+  width: 1.5rem;
+  transform: rotate(-45deg);
+}
+.header__item {
+  line-height: 2.5;
+}
+.header__item a {
+  text-decoration: none;
+  color: #2d314d;
+  font-size: 18px;
+}
+
+.footer {
+  padding: 2rem 0 4rem;
+  background-color: #2d314d;
+  text-align: center;
+}
+.footer ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.footer__socialNetwork {
+  margin-bottom: 1.5rem;
+}
+.footer__socialNetwork--logo {
+  margin: 0;
+  margin-bottom: 1rem;
+}
+.footer__socialNetwork--share {
+  display: flex;
+  justify-content: center;
+}
+.footer__socialNetwork--icon {
+  margin-right: 1rem;
+}
+.footer__item {
+  line-height: 2.5;
+}
+.footer__item a {
+  color: #f3f4f6;
+  text-decoration: none;
+}
+.footer__support {
+  margin-bottom: 1.5rem;
+}
+.footer__copyright p {
+  font-size: 80%;
+}
+.footer__copyright p a {
+  color: #9698a6;
+}
+
+.intro {
+  text-align: center;
+  background-color: white;
+  padding: 0 0 4rem;
+}
+.intro__image {
+  background-image: url("../../src/images/bg-intro-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.intro__image img {
+  max-width: 100%;
+}
+.intro__title {
+  font-size: 35px;
+  font-weight: 400;
+}
+
+.choose {
+  padding: 2rem 0 4rem;
+  background-color: #f3f4f6;
+  text-align: center;
+}
+.choose__title {
+  font-size: 30px;
+}
+.choose__option {
+  margin-bottom: 2rem;
+}
+.choose__option:last-child {
+  margin: 0;
+}
+
+.articles {
+  background-color: #fafafa;
+  padding: 2rem 0 4rem;
+  text-align: center;
+}
+
+.article {
+  background-color: white;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+.article__image {
+  margin: 0;
+}
+.article__image img {
+  max-width: 100%;
+}
+.article__information {
+  padding: 1rem;
+  text-align: left;
+}
+.article__title {
+  margin: 1rem 0;
+  font-size: 18px;
+}
+.article__description {
+  margin: 0;
+  font-size: 14px;
+}

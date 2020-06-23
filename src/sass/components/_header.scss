@@ -1,0 +1,93 @@
+.header {
+  height: 60px;
+  background-color: $white;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__figure {
+    margin: 1rem 0;
+  }
+  &__hamburguer {
+    width: 3rem;
+    height: 3rem;
+    position: relative;
+    cursor: pointer;
+    transition: .3s;
+    z-index: 2;
+    span, span::before, span::after {
+      background: $dark-blue;
+      content: "";
+      display: block;
+      height: 2px;
+      position: absolute;
+      transform: rotate(0);
+      transition: transform .1s ease-in,top .1s ease-in 150ms,bottom .1s ease-in 150ms;
+      width: 1.5rem;
+    }
+    span {
+      top: 1.5rem;
+      left: .5rem;
+      &::before {
+        top: -.5rem;
+      }
+      &::after {
+        top: .5rem;
+      }
+    }
+  }
+  &__list {
+    background: $white;
+    max-width: 80%;
+    margin: 0 auto;
+    margin-top: 2rem;
+    padding: 1.5rem 0;
+    list-style: none;
+    border-radius: 3px;
+    text-align: center;
+    box-shadow: $shadow;
+  }
+  &__nav {
+    display: none;
+    &.is-active {
+      display: block;
+      position: fixed;
+      top: 60px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba($dark-blue, .5);
+      .header__list {
+        animation: fadeUp .3s ease-out forwards;
+      }
+      + .header__hamburguer {
+        span {
+          left: .75rem;
+          background-color: $white;
+          &::before {
+            transform: rotate(45deg);
+            top: 0;
+          }
+          &::after {
+            top: 0;
+            width: 1.5rem;
+            transform: rotate(-45deg);
+          }
+        }
+      }
+    }
+  }
+  &__item {
+    line-height: 2.5;
+    a {
+      text-decoration: none;
+      color: $dark-blue;
+      font-size: 18px;
+    }
+  }
+}

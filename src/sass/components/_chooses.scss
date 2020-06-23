@@ -1,0 +1,14 @@
+.choose {
+  padding: 2rem 0 4rem;
+  background-color: $light-grayish-blue;
+  text-align: center;
+  &__title {
+    font-size: 30px;
+  }
+  &__option {
+    margin-bottom: 2rem;
+    &:last-child {
+      margin: 0;
+    }
+  }
+}
