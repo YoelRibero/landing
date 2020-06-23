@@ -2,6 +2,9 @@
   background-color: $very-light-gray;
   padding: 2rem 0 4rem;
   text-align: center;
+  @include media ('desktop-s') {
+    text-align: left;
+  }
 }
 
 .article {
@@ -13,6 +16,10 @@
     margin: 0;
     img {
       max-width: 100%;
+    }
+    @include media ('tablet') {
+      max-height: 185px;
+      overflow: hidden;
     }
   }
   &__information {

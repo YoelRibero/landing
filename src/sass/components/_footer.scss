@@ -12,6 +12,9 @@
     &--logo {
       margin: 0;
       margin-bottom: 1rem;
+      @include media ('desktop-s') {
+        margin-bottom: 4rem;
+      }
     }
     &--share {
       display: flex;
@@ -19,6 +22,9 @@
     }
     &--icon {
       margin-right: 1rem;
+      @include media ('desktop-s') {
+        margin-right: .5rem;
+      }
     }
   }
   &__item {
@@ -34,9 +40,27 @@
   &__copyright {
     p {
       font-size: 80%;
+      @include media ('desktop-s') {
+        line-height: 1.5;
+        width: 60%;
+        margin-left: auto;
+      }
       a {
         color: $grayish-blue;
       }
+    }
+    @include media ('desktop-s') {
+      text-align: right;
+      .button {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+  @include media ('desktop-s') {
+    text-align: left;
+    &__container {
+      display: flex;
+      justify-content: space-between;
     }
   }
 }

@@ -9,6 +9,10 @@
   &__container {
     display: flex;
     justify-content: space-between;
+    @include media ('desktop-s') {
+      padding: .5rem 0;
+      align-items: center;
+    }
   }
   &__figure {
     margin: 1rem 0;
@@ -40,6 +44,9 @@
         top: .5rem;
       }
     }
+    @include media ('desktop-s') {
+      display: none;
+    }
   }
   &__list {
     background: $white;
@@ -51,6 +58,19 @@
     border-radius: 3px;
     text-align: center;
     box-shadow: $shadow;
+    @include media ('desktop-s') {
+      background-color: transparent;
+      max-width: none;
+      margin: 0;
+      padding: 0;
+      border-radius: 0;
+      box-shadow: none;
+      display: flex;
+      justify-content: center;
+      a {
+        padding: .5rem 1rem;
+      }
+    }
   }
   &__nav {
     display: none;
@@ -81,6 +101,10 @@
         }
       }
     }
+    @include media ('desktop-s') {
+      display: block;
+      position: relative;
+    }
   }
   &__item {
     line-height: 2.5;
@@ -89,5 +113,14 @@
       color: $dark-blue;
       font-size: 18px;
     }
+  }
+  .button {
+    display: none;
+    @include media ('desktop-s') {
+      display: block;
+    }
+  }
+  @include media ('desktop-s') {
+    height: 80px;
   }
 }

@@ -30,22 +30,28 @@
         <div class="header__hamburguer">
           <span></span>
         </div>
+        <div class="button">Request invite</div>
       </div>
     </div>
   </header>
   
   <section class="intro">
-    <div class="intro__image">
-      <img src="./src/images/image-mockups.png" alt="">
+    <div class="wrapper">
+      <div class="intro__container">
+        <div class="intro__image">
+          <img src="./src/images/image-mockups.png" alt="">
+        </div>
+        <div class="intro__info">
+          <h1 class="intro__title">Next generation digital banking</h1>
+          <p class="intro__description">
+            Take your financial life online. Your Easybank account will be a one-stop-shop 
+            for spending, saving, budgeting, investing, and much more.
+          </p>
+          <button class="button">Request Invite</button>
+        </div>
+      </div>
     </div>
-    <div class="intro__info">
-      <h1 class="intro__title">Next generation digital banking</h1>
-      <p class="intro__description">
-        Take your financial life online. Your Easybank account will be a one-stop-shop 
-        for spending, saving, budgeting, investing, and much more.
-      </p>
-      <button class="button">Request Invite</button>
-    </div>
+    
   </section>
 
   <section class="choose">
@@ -53,7 +59,7 @@
       <h2 class="choose__title">Why choose Easybank?</h2>
       <p class="choose__description">We leverage Open Banking to turn your bank account into your financial hub. Control 
       your finances like never before.</p>
-      <div class="choose__options">
+      <div class="choose__options grid">
         <article class="choose__option">
           <div class="choose__option--image">
             <img src="./src/images/icon-online.svg" alt="">
@@ -109,88 +115,92 @@
   <section class="articles">
     <div class="wrapper">
       <h2 class="articles__title">Latest Articles</h2>
-      <article class="article">
-        <figure class="article__image">
-          <img src="./src/images/image-currency.jpg" alt="">
-        </figure>
-        <div class="article__information">
-          <small class="article__author">By Claire Robinson</small>
-          <h4 class="article__title">Receive money in any currency with no fees</h4>
-          <p class="article__description">The world is getting smaller and we’re becoming more mobile. So why should you be 
-          forced to only receive money in a single …</p>
-        </div>
-      </article>
-      <article class="article">
-        <figure class="article__image">
-          <img src="./src/images/image-restaurant.jpg" alt="">
-        </figure>
-        <div class="article__information">
-          <small class="article__author">By Wilson Hutton</small>
-          <h4 class="article__title">Receive money in any currency with no fees</h4>
-          <p class="article__description">Our simple budgeting feature allows you to separate out your spending and set 
-          realistic limits each month. That means you …</p>
-        </div>
-      </article>
-      <article class="article">
-        <figure class="article__image">
-          <img src="./src/images/image-plane.jpg" alt="">
-        </figure>
-        <div class="article__information">
-          <small class="article__author">By Wilson Hutton</small>
-          <h4 class="article__title">Take your Easybank card wherever you go</h4>
-          <p class="article__description">We want you to enjoy your travels. This is why we don’t charge any fees on purchases 
-          while you’re abroad. We’ll even show you …</p>
-        </div>
-      </article>
-      <article class="article">
-        <figure class="article__image">
-          <img src="./src/images/image-confetti.jpg" alt="">
-        </figure>
-        <div class="article__information">
-          <small class="article__author">By Claire Robinson</small>
-          <h4 class="article__title">Our invite-only Beta accounts are now live!</h4>
-          <p class="article__description">After a lot of hard work by the whole team, we’re excited to launch our closed beta. 
-          It’s easy to request an invite through the site ...</p>
-        </div>
-      </article>
+      <div class="articles__container grid">
+        <article class="article">
+          <figure class="article__image">
+            <img src="./src/images/image-currency.jpg" alt="">
+          </figure>
+          <div class="article__information">
+            <small class="article__author">By Claire Robinson</small>
+            <h4 class="article__title">Receive money in any currency with no fees</h4>
+            <p class="article__description">The world is getting smaller and we’re becoming more mobile. So why should you be 
+            forced to only receive money in a single …</p>
+          </div>
+        </article>
+        <article class="article">
+          <figure class="article__image">
+            <img src="./src/images/image-restaurant.jpg" alt="">
+          </figure>
+          <div class="article__information">
+            <small class="article__author">By Wilson Hutton</small>
+            <h4 class="article__title">Receive money in any currency with no fees</h4>
+            <p class="article__description">Our simple budgeting feature allows you to separate out your spending and set 
+            realistic limits each month. That means you …</p>
+          </div>
+        </article>
+        <article class="article">
+          <figure class="article__image">
+            <img src="./src/images/image-plane.jpg" alt="">
+          </figure>
+          <div class="article__information">
+            <small class="article__author">By Wilson Hutton</small>
+            <h4 class="article__title">Take your Easybank card wherever you go</h4>
+            <p class="article__description">We want you to enjoy your travels. This is why we don’t charge any fees on purchases 
+            while you’re abroad. We’ll even show you …</p>
+          </div>
+        </article>
+        <article class="article">
+          <figure class="article__image">
+            <img src="./src/images/image-confetti.jpg" alt="">
+          </figure>
+          <div class="article__information">
+            <small class="article__author">By Claire Robinson</small>
+            <h4 class="article__title">Our invite-only Beta accounts are now live!</h4>
+            <p class="article__description">After a lot of hard work by the whole team, we’re excited to launch our closed beta. 
+            It’s easy to request an invite through the site ...</p>
+          </div>
+        </article>
+      </div>
     </div>
   </section>
 
   <footer class="footer">
     <div class="wrapper">
-      <section class="footer__socialNetwork">
-        <figure class="footer__socialNetwork--logo">
-          <img src="./src/images/logo.svg" alt="">
-        </figure>
-        <ul class="footer__socialNetwork--share">
-          <li class="footer__socialNetwork--icon"><a href="#"><img src="./src/images/icon-facebook.svg" alt=""></a></li>
-          <li class="footer__socialNetwork--icon"><a href="#"><img src="./src/images/icon-youtube.svg" alt=""></a></li>
-          <li class="footer__socialNetwork--icon"><a href="#"><img src="./src/images/icon-twitter.svg" alt=""></a></li>
-          <li class="footer__socialNetwork--icon"><a href="#"><img src="./src/images/icon-pinterest.svg" alt=""></a></li>
-          <li class="footer__socialNetwork--icon"><a href="#"><img src="./src/images/icon-instagram.svg" alt=""></a></li>
-        </ul>
-      </section>
-      <section class="footer__about">
-        <ul class="footer__list">
-          <li class="footer__item"><a href="#">About Us</a></li>
-          <li class="footer__item"><a href="#">Contact</a></li>
-          <li class="footer__item"><a href="#">Blog</a></li>
-        </ul>
-      </section>
-      <section class="footer__support">
-        <ul class="footer__list">
-          <li class="footer__item"><a href="#">Careers</a></li>
-          <li class="footer__item"><a href="#">Support</a></li>
-          <li class="footer__item"><a href="#">Privacy Policy</a></li>
-        </ul>
-      </section>
-      <section class="footer__copyright">
-        <button class="button">Request Invite</button>
-        <p>© Design by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a> | Realization Yoel Ribero</p>
-      </section>
+      <div class="footer__container">
+        <section class="footer__socialNetwork">
+          <figure class="footer__socialNetwork--logo">
+            <img src="./src/images/logo.svg" alt="">
+          </figure>
+          <ul class="footer__socialNetwork--share">
+            <li class="footer__socialNetwork--icon"><a href="#"><img src="./src/images/icon-facebook.svg" alt=""></a></li>
+            <li class="footer__socialNetwork--icon"><a href="#"><img src="./src/images/icon-youtube.svg" alt=""></a></li>
+            <li class="footer__socialNetwork--icon"><a href="#"><img src="./src/images/icon-twitter.svg" alt=""></a></li>
+            <li class="footer__socialNetwork--icon"><a href="#"><img src="./src/images/icon-pinterest.svg" alt=""></a></li>
+            <li class="footer__socialNetwork--icon"><a href="#"><img src="./src/images/icon-instagram.svg" alt=""></a></li>
+          </ul>
+        </section>
+        <section class="footer__about">
+          <ul class="footer__list">
+            <li class="footer__item"><a href="#">About Us</a></li>
+            <li class="footer__item"><a href="#">Contact</a></li>
+            <li class="footer__item"><a href="#">Blog</a></li>
+          </ul>
+        </section>
+        <section class="footer__support">
+          <ul class="footer__list">
+            <li class="footer__item"><a href="#">Careers</a></li>
+            <li class="footer__item"><a href="#">Support</a></li>
+            <li class="footer__item"><a href="#">Privacy Policy</a></li>
+          </ul>
+        </section>
+        <section class="footer__copyright">
+          <button class="button">Request Invite</button>
+          <p>© Design by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a> | Realization Yoel Ribero</p>
+        </section>
+      </div>
     </div>
   </footer>
-  Request invite
+  
 
   We leverage Open Banking to turn your bank account into your financial hub. Control 
   your finances like never before.

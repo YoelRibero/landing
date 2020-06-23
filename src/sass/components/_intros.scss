@@ -8,10 +8,38 @@
     background-size: 100%;
     img {
       max-width: 100%;
+      @include media ('desktop-s') {
+        position: relative;
+        z-index: 2;
+      }
+    }
+    @include media ('desktop-s') {
+      background-image: url('../../src/images/bg-intro-desktop.svg');
+      background-size: 100% 100%;
+      position: relative;
+    }
+    @include media ('desktop-s') {
+      width: 60%;
+      order: 2;
+      margin: -8rem 0;
+    }
+    @include media ('desktop-m') {
+      margin: -8rem 0 -15rem;
     }
   }
   &__title {
     font-size: 35px;
     font-weight: 400;
+  }
+  @include media ('desktop-s') {
+    &__container {
+      display: flex;
+      align-items: center;
+      padding: 0;
+    }
+    &__info {
+      width: 40%;
+      text-align: left;
+    }
   }
 }

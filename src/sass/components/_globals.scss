@@ -43,6 +43,19 @@ small {
   background-image: linear-gradient(to right, $lime-green, $bright-cyan);
   color: $white;
   font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+}
+
+.grid {
+  @include media ('tablet') {
+    @include display-grid;
+    @include grid-template-columns(grid-repeat(2, $stuff: 1fr));
+    grid-gap: 1rem;
+  }
+  @include media ('desktop-s') {
+    @include grid-template-columns(grid-repeat(4, $stuff: 1fr));
+  }
 }
 
 @keyframes fadeUp {
