@@ -32,6 +32,9 @@
     a {
       color: $light-grayish-blue;
       text-decoration: none;
+      &:hover {
+        color: $lime-green;
+      }
     }
   }
   &__support {

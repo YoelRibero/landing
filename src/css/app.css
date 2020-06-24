@@ -23,6 +23,10 @@ p {
   font-weight: 400;
 }
 
+a {
+  transition: all 0.3s;
+}
+
 small {
   color: #9698a6;
   font-size: 75%;
@@ -38,6 +42,10 @@ small {
   font-weight: bold;
   text-align: center;
   cursor: pointer;
+  transition: all 0.3s;
+}
+.button:hover {
+  opacity: 0.6;
 }
 
 @media only screen and (min-width: 768px) {
@@ -144,6 +152,9 @@ small {
   .header__list a {
     padding: 0.5rem 1rem;
   }
+  .header__list a:hover {
+    border-bottom: 2px solid #31d35c;
+  }
 }
 .header__nav {
   display: none;
@@ -241,6 +252,9 @@ small {
 .footer__item a {
   color: #f3f4f6;
   text-decoration: none;
+}
+.footer__item a:hover {
+  color: #31d35c;
 }
 .footer__support {
   margin-bottom: 1.5rem;

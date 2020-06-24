@@ -30,6 +30,10 @@ p {
   font-weight: 400;
 }
 
+a {
+  transition: all .3s;
+}
+
 small {
   color: $grayish-blue;
   font-size: 75%;
@@ -45,6 +49,10 @@ small {
   font-weight: bold;
   text-align: center;
   cursor: pointer;
+  transition: all .3s;
+  &:hover {
+    opacity: .6;
+  }
 }
 
 .grid {
